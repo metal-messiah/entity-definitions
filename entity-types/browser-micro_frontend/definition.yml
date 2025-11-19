@@ -7,13 +7,13 @@ goldenTags:
   - team
 synthesis:
   rules:
-    - identifier: mfe.id
-      name: mfe.name
+    - identifier: source.id
+      name: source.name
       conditions:
-        - attribute: eventSource
-          value: "MicroFrontendBrowserAgent"
+        - attribute: source
+          value: "MFE"
       prefixedTags:
-        "mfe.":
+        "source.":
 configuration:
   entityExpirationTime: EIGHT_DAYS
   alertable: true
